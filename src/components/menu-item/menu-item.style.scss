@@ -11,6 +11,8 @@
     min-width: 30%;
     background-position: center;
     background-size: cover;
+    cursor: pointer;
+    transition: transform 0.25s ease-out;
 
     &:first-child {
         margin-right: 7.5px;
@@ -48,3 +50,7 @@
         }
       }
 }
+
+.menu-item:hover {
+  transform: scale(1.05);
+} 
