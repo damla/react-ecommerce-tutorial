@@ -31,7 +31,8 @@
 
     .option {
       margin-left: 10px;
-
+      cursor: pointer;
+      
       &:hover {
         color: rgba(0, 0, 0, 0.55);
       }
