@@ -1,5 +1,8 @@
 body {
   font-family: "Open Sans Condensed";
+}
+
+.content-container {
   padding: 20px 60px;
 }
 

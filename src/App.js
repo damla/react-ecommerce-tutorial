@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { HashRouter, Switch, Route } from "react-router-dom";
+import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 
 import HomePage from "./pages/homepage/homepage.component";
@@ -30,8 +30,7 @@ class App extends Component {
             ...snapshot.data(),
           });
         });
-      }
-      setCurrentUser(userAuth);
+      } else setCurrentUser(null);
     });
   }
 
@@ -42,12 +41,23 @@ class App extends Component {
   render() {
     return (
       <HashRouter basename="/">
-        <div>
-          <Header />
+        <Header />
+        <div className="content-container">
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route path="/shop" component={ShopPage} />
-            <Route path="/signin" component={SignInAndSignUpPage} />
+            <Route
+              exact
+              path="/signIn"
+              render={() => {
+                console.log(this.props.currentUser);
+                return this.props.currentUser ? (
+                  <Redirect to="/" />
+                ) : (
+                  <SignInAndSignUpPage />
+                );
+              }}
+            />
           </Switch>
         </div>
       </HashRouter>
@@ -55,9 +65,14 @@ class App extends Component {
   }
 }
 
+// destructure user reducer
+const mapStateToProps = ({ user }) => ({
+  currentUser: user.currentUser,
+});
+
 // pass ettigin objenin action oldugunu belirtiyorsun
 const mapDispatchToProps = (dispatch) => ({
   setCurrentUser: (user) => dispatch(setCurrentUser(user)),
 });
 
-export default connect(null, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App);
