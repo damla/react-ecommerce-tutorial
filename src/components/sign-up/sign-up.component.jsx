@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 
 import FormInput from "../form-input/form-input.component";
 import CustomButton from "../custom-button/custom-button.component";
@@ -7,7 +7,7 @@ import { auth, createUserProfileDocument } from "../../firebase/firebase.utils";
 
 import "./sign-up.styles.scss";
 
-export default class SignUp extends React.Component {
+export default class SignUp extends Component {
   constructor() {
     super();
     this.state = {
@@ -34,14 +34,13 @@ export default class SignUp extends React.Component {
       );
 
       await createUserProfileDocument(user, { displayName });
-
       // formu temizlemek icin
-      this.state = {
+      this.setState({
         displayName: "",
         email: "",
         password: "",
         confirmPassword: "",
-      };
+      });
     } catch (error) {
       console.error(error);
     }
