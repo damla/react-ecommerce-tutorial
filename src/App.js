@@ -10,8 +10,8 @@ import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 import "./App.css";
 
 class App extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
 
     this.state = {
       currentUser: null,
@@ -35,8 +35,6 @@ class App extends Component {
               ...snapshot.data(),
             },
           });
-
-          console.log(this.state);
         });
       }
       this.setState({ currentUser: userAuth });
