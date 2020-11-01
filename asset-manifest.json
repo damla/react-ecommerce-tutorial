@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/react-ecommerce-tutorial/static/css/main.d085d8a4.chunk.css",
-    "main.js": "/react-ecommerce-tutorial/static/js/main.b97ccd1f.chunk.js",
-    "main.js.map": "/react-ecommerce-tutorial/static/js/main.b97ccd1f.chunk.js.map",
+    "main.css": "/react-ecommerce-tutorial/static/css/main.900daff9.chunk.css",
+    "main.js": "/react-ecommerce-tutorial/static/js/main.d97d74ee.chunk.js",
+    "main.js.map": "/react-ecommerce-tutorial/static/js/main.d97d74ee.chunk.js.map",
     "runtime-main.js": "/react-ecommerce-tutorial/static/js/runtime-main.57390ec5.js",
     "runtime-main.js.map": "/react-ecommerce-tutorial/static/js/runtime-main.57390ec5.js.map",
-    "static/js/2.cfd2e9dc.chunk.js": "/react-ecommerce-tutorial/static/js/2.cfd2e9dc.chunk.js",
-    "static/js/2.cfd2e9dc.chunk.js.map": "/react-ecommerce-tutorial/static/js/2.cfd2e9dc.chunk.js.map",
+    "static/js/2.6cb0f0d7.chunk.js": "/react-ecommerce-tutorial/static/js/2.6cb0f0d7.chunk.js",
+    "static/js/2.6cb0f0d7.chunk.js.map": "/react-ecommerce-tutorial/static/js/2.6cb0f0d7.chunk.js.map",
     "index.html": "/react-ecommerce-tutorial/index.html",
-    "precache-manifest.3acd0ce5561e34a16438642f23846564.js": "/react-ecommerce-tutorial/precache-manifest.3acd0ce5561e34a16438642f23846564.js",
+    "precache-manifest.634005e46df5de17d04b001dd32e2faf.js": "/react-ecommerce-tutorial/precache-manifest.634005e46df5de17d04b001dd32e2faf.js",
     "service-worker.js": "/react-ecommerce-tutorial/service-worker.js",
-    "static/css/main.d085d8a4.chunk.css.map": "/react-ecommerce-tutorial/static/css/main.d085d8a4.chunk.css.map",
-    "static/js/2.cfd2e9dc.chunk.js.LICENSE.txt": "/react-ecommerce-tutorial/static/js/2.cfd2e9dc.chunk.js.LICENSE.txt",
-    "static/media/crown.ed28accb.svg": "/react-ecommerce-tutorial/static/media/crown.ed28accb.svg"
+    "static/css/main.900daff9.chunk.css.map": "/react-ecommerce-tutorial/static/css/main.900daff9.chunk.css.map",
+    "static/js/2.6cb0f0d7.chunk.js.LICENSE.txt": "/react-ecommerce-tutorial/static/js/2.6cb0f0d7.chunk.js.LICENSE.txt",
+    "static/media/crown.ed28accb.svg": "/react-ecommerce-tutorial/static/media/crown.ed28accb.svg",
+    "static/media/shopping-bag.30f07071.svg": "/react-ecommerce-tutorial/static/media/shopping-bag.30f07071.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.57390ec5.js",
-    "static/js/2.cfd2e9dc.chunk.js",
-    "static/css/main.d085d8a4.chunk.css",
-    "static/js/main.b97ccd1f.chunk.js"
+    "static/js/2.6cb0f0d7.chunk.js",
+    "static/css/main.900daff9.chunk.css",
+    "static/js/main.d97d74ee.chunk.js"
   ]
 }
