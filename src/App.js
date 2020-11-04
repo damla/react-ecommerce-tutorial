@@ -67,7 +67,7 @@ class App extends Component {
 
 // destructure user reducer
 const mapStateToProps = ({ user }) => ({
-  currentUser: user.currentUser,
+  currentUser: user.currentUser, // reducerdan current user bilgisini alip componente bagliyor
 });
 
 // pass ettigin objenin action oldugunu belirtiyorsun
