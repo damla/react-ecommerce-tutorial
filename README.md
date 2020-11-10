@@ -1,4 +1,4 @@
-"homepage": "https://damlakoksal.github.io/react-ecommerce-tutorial/",
+"homepage": "https://damla.github.io/react-ecommerce-tutorial/",
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
